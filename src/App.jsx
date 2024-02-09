@@ -48,7 +48,7 @@ const OrderDetail = ({ id }) => {
     getOrderById(id);
   }, [id]);
 
-  const getOrderById = async (id = '65c4c77c4bbf53a7a9d2aa5f') => {
+  const getOrderById = async (id) => {
     try {
       setIsLoading(true);
       const response = await fetch(
